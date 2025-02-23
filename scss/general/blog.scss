@@ -1,0 +1,47 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+.blog-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+        div {
+            @include flex(center);
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            margin-left: 10%;
+            width: 80%;
+            p {
+                font-size: 18px;
+                text-align: center;
+                width: 100%;
+            }
+            a {
+                color: $color-secundario;
+            }
+        }
+    }
+}
+
+.img-blog {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.blog-search {
+    @include flex(center);
+    margin-top: 2rem;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid $color-principal;
+    margin-left: 10%;
+    margin-right: 10%;
+}

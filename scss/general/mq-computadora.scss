@@ -1,0 +1,167 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/* titulo principal y secundario para computadoras */
+@media screen and (min-width: 768px) {
+    h1 {
+        @include titulo-principal (90px, 3px);
+    }
+
+    h2 {
+        @include h2 (48px, 0.5px)
+    }
+}
+
+/* estilos textos pag principal en pantallas grandes*/
+@media screen and (min-width: 1024px) {
+    .main-text {
+        @include flex (space-around);
+        flex-direction: row;
+        div {
+            padding: 25px;
+            width: 33%;
+        }
+    }
+
+}
+
+/* estilos de menu con grid para pantallas medianas y grandes */
+@media screen and (min-width: 768px) {
+    .menu-burgers {
+        @include grid (1fr 1fr, 5fr auto 5fr auto 5fr auto 5fr auto);
+        gap: 10px;
+        width: 90%;
+        margin-left: 5%;
+        div {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+
+    hr {
+        grid-column: 1 / 3;
+    }
+
+    .item-img1 {
+        order: 1;
+    }
+
+    .item1 {
+        order: 2;
+    }
+
+    .hr-uno {
+        order: 3;
+    }
+
+    .item-img2 {
+        order: 5;
+    }
+
+    .item2 {
+        order: 4;
+    }
+
+    .hr-dos {
+        order: 5;
+    }
+
+    .item-img3 {
+        order: 6;
+    }
+
+    .item3 {
+        order: 7;
+    }
+
+    .hr-tres {
+        order: 8;
+    }
+
+    .item-img4 {
+        order: 10;
+        margin-left: 0;
+    }
+
+    .item4 {
+        order: 9;
+    }
+
+    .hr-cuatro {
+        order: 11;
+    }
+}
+
+
+/*estilos para BLOG en pantallas grandes*/
+
+@media screen and (min-width:1024px) {
+    .blog-section {
+        // margin-top: 5rem;
+        margin-bottom: 5rem;
+        div {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            
+            div {
+                @include flex(center);
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 50%;
+                margin-left: 0;
+                p {
+                    font-size: 36px;
+                    text-align: center;
+                    width: 75%;
+                }
+                a {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+
+    .blog-search {
+        @include flex(center);
+        margin-top: 2rem;
+        font-size: 16px;
+        border: 2px solid $color-principal;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+
+/* estilos para clientes en pantallas grandes*/
+
+@media screen and (min-width: 768px) {
+    .calificacion {
+        padding: 50px;
+        .titulo-secundario {
+            margin-bottom: 5rem;
+        }
+        div {
+            .submit-button {
+                font-size: 28px;
+            }
+        }
+    }
+    .rating-container {
+        div {
+            font-size: 24px;
+        }
+    }
+}
+
+
+/* estilos footer en pantallas grandes*/
+@media screen and (min-width: 768px) {
+    footer {
+        font-size: 150%;
+    }    
+}

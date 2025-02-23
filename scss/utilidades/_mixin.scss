@@ -1,0 +1,47 @@
+@import "../utilidades/variables";
+
+// mixin para h1
+@mixin titulo-principal ($size,$border-width) {
+    text-align: center;
+    text-align: center;
+    font-size: $size;
+    color: $color-principal;
+    -webkit-text-stroke-color: $color-bordes;
+    -webkit-text-stroke-width: $border-width;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+// mixin para h2
+@mixin h2 ($size, $border-width) {
+    text-align: center;
+    font-size: $size;
+    text-transform: uppercase;
+    -webkit-text-stroke-color: $color-bordes;
+    -webkit-text-stroke-width: $border-width;
+    color: $color-principal;
+}
+
+// mixin para la navbar
+@mixin navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 24px;
+    gap: 30px;
+}
+
+// mixin de flex
+@mixin flex ($just-cont) {
+    display: flex;
+    justify-content: $just-cont;
+}
+
+// mixin de grid
+@mixin grid ($columns, $rows) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}

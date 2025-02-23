@@ -1,0 +1,35 @@
+@import "../utilidades/variables";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos globales */
+body {
+    background-color: $color-background;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-secundario;
+    font-style: italic;
+}
+
+/* estilos para links y botones del navbar*/
+a {
+    color: $color-secundario;
+}
+
+a:visited {
+    color: $color-principal;
+}
+
+.custombotton {
+    border-color: $color-principal;
+    border-width: 2px;
+}
+
+.nav-link:hover {
+    color: $color-secundario;
+    border: 1px solid $color-secundario;
+}

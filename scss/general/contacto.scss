@@ -1,0 +1,31 @@
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+main .form-contacto div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 20%;
+    form {
+        @include flex (center);
+        flex-direction: column;
+        div {
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            label {
+                font-size: 24px;
+            }
+            textarea {
+                min-height: 200px;
+            }
+        }
+        .submit-button {
+            margin-top: 2.5rem;
+            margin-bottom: 5rem;
+            font-size: 24px;
+            margin-left: 40%;
+            margin-right: 25%;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+// Import de utilidades
+@import "utilidades/variables";
+@import "utilidades/reset";
+@import "utilidades/mixin";
+@import "general/home.scss";
+@import "general/menu.scss";
+@import "general/blog.scss";
+@import "general/clientes.scss";
+@import "general/contacto.scss";
+@import "general/mq-computadora.scss";
+
+
+/* titulos principales para moviles y tabletas */
+@media screen and (max-width: 767px) {
+    h1 {
+        @include titulo-principal (45px, 1px);
+        margin-bottom: 2rem;
+    }
+    
+    /* estilos para titulos secundarios para moviles y tabletas */
+    h2 {
+        @include h2 (36px, 0.5px);
+    }
+}
+
+/* estilos para el header y navbar */
+header nav {
+    @include flex (space-between);
+    margin-inline: 50px;
+    ul {
+        @include navbar;
+        li {
+            display: flex;
+            text-wrap: nowrap;
+            font-family:fantasy;
+            font-variant: small-caps;
+            font-size: 180%;
+        }
+    }
+}
+
+/* estilos del footer*/
+footer {
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-top: 2px solid $color-secundario;
+}
