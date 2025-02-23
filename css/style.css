@@ -394,6 +394,24 @@ main .form-contacto div form .submit-button {
   }
 }
 /* estilos para el header y navbar */
+.navbar {
+  font-size: 36px;
+  font-variant: small-caps;
+  font-family: fantasy;
+}
+
+.navbar-nav {
+  font-size: 36px;
+  font-variant: small-caps;
+  font-family: fantasy;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-inline: 1.5rem;
+}
+
 /* estilos del footer*/
 footer {
   text-transform: uppercase;
