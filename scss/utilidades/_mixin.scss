@@ -25,13 +25,13 @@
 }
 
 // mixin para la navbar
-@mixin navbar {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 24px;
-    gap: 30px;
-}
+// @mixin navbar {
+//     display: flex;
+//     align-items: center;
+//     list-style: none;
+//     font-size: 24px;
+//     gap: 30px;
+// }
 
 // mixin de flex
 @mixin flex ($just-cont) {
