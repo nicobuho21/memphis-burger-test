@@ -43,6 +43,9 @@
     font-size: 36px;
     font-variant: small-caps;
     font-family: fantasy;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
 }
 
 .navbar-nav {
@@ -55,6 +58,12 @@
 
 .nav-item {
     margin-inline: 1.5rem;
+}
+
+.nav-link {
+    font-size: 36px;
+    font-variant: small-caps;
+    font-family: fantasy;
 }
 
 /* estilos del footer*/
