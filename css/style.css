@@ -394,26 +394,6 @@ main .form-contacto div form .submit-button {
   }
 }
 /* estilos para el header y navbar */
-header nav {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 50px;
-}
-header nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-size: 24px;
-  gap: 30px;
-}
-header nav ul li {
-  display: flex;
-  text-wrap: nowrap;
-  font-family: fantasy;
-  font-variant: small-caps;
-  font-size: 180%;
-}
-
 /* estilos del footer*/
 footer {
   text-transform: uppercase;
